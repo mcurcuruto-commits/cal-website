@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>C.A.L. — Coherence Awareness Living</title>
+<meta name="description" content="Meet C.A.L., your personal AI coach — helping you create coherence, a state of harmony and balance between your mind, body and nervous system.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&family=Nunito+Sans:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --sage-50: #f4f8f1;
+    --sage-100: #e6efe0;
+    --sage-300: #a9c49a;
+    --sage-600: #557a4a;
+    --sage-800: #2f4a2a;
+    --gold: #d9b45a;
+    --gold-soft: #f3dc9c;
+    --ink: #22301f;
+    --muted: #5c6b57;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    font-family: "Nunito Sans", system-ui, -apple-system, sans-serif;
+    color: var(--ink);
+    background: radial-gradient(ellipse at 50% -10%, #fffaf0 0%, var(--sage-50) 45%, var(--sage-100) 100%);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 72px 20px 40px; text-align: center; }
+
+  .orb-wrap { display: flex; justify-content: center; margin-bottom: 36px; }
+  .orb {
+    width: 150px; height: 150px; border-radius: 50%;
+    background: radial-gradient(circle at 38% 34%, #fffbe8 0%, var(--gold-soft) 28%, var(--gold) 62%, #b48a32 100%);
+    box-shadow: 0 0 40px 12px rgba(217,180,90,.45), 0 0 110px 40px rgba(217,180,90,.18);
+    animation: breathe 8s ease-in-out infinite;
+  }
+  @keyframes breathe {
+    0%, 100% { transform: scale(.94); box-shadow: 0 0 34px 10px rgba(217,180,90,.38), 0 0 90px 30px rgba(217,180,90,.14); }
+    50% { transform: scale(1.04); box-shadow: 0 0 52px 18px rgba(217,180,90,.55), 0 0 140px 54px rgba(217,180,90,.22); }
+  }
+  @media (prefers-reduced-motion: reduce) { .orb { animation: none; } }
+
+  h1 {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-weight: 600; font-size: clamp(56px, 12vw, 88px);
+    letter-spacing: .06em; margin: 0; color: var(--sage-800); line-height: 1;
+  }
+  .expansion {
+    font-family: "Cormorant Garamond", Georgia, serif;
+    font-size: clamp(20px, 4.4vw, 26px); letter-spacing: .14em;
+    color: var(--sage-600); margin: 12px 0 40px;
+  }
+  .lead { font-size: 20px; font-weight: 600; margin: 0 0 12px; color: var(--sage-800); }
+  .body { font-size: 17px; color: var(--muted); margin: 0 auto 36px; max-width: 560px; }
+
+  .pill {
+    display: inline-block; padding: 10px 22px; border-radius: 999px;
+    border: 1px solid var(--gold); color: var(--sage-800);
+    background: rgba(255,255,255,.6); font-weight: 600; font-size: 15px;
+  }
+
+  blockquote {
+    margin: 56px auto 0; max-width: 560px; padding: 0;
+    font-family: "Cormorant Garamond", Georgia, serif; font-size: 23px;
+    font-style: italic; color: var(--sage-800);
+  }
+  blockquote cite { display: block; margin-top: 10px; font-family: "Nunito Sans", sans-serif; font-style: normal; font-size: 14px; color: var(--muted); }
+
+  .links { margin: 56px 0 0; display: flex; gap: 12px 28px; justify-content: center; flex-wrap: wrap; }
+  .links a { color: var(--sage-600); font-weight: 600; text-decoration: none; border-bottom: 1px solid var(--sage-300); }
+  .links a:hover { color: var(--sage-800); border-color: var(--gold); }
+
+  footer { max-width: 760px; margin: 0 auto; padding: 32px 20px 48px; text-align: center; font-size: 13px; color: var(--muted); }
+  footer p { margin: 4px 0; }
+  .note { margin-top: 14px; font-size: 12px; opacity: .85; }
+</style>
+</head>
+<body>
+<main>
+  <div class="orb-wrap" aria-hidden="true"><div class="orb"></div></div>
+  <h1>C.A.L.</h1>
+  <p class="expansion">Coherence Awareness Living</p>
+
+  <p class="lead">Meet C.A.L., your personal AI coach.</p>
+  <p class="body">C.A.L. helps you create coherence — a state of harmony and balance between your mind, body and nervous system — through daily check-ins, guided practices, journaling and gentle coaching that teaches you to listen to yourself again.</p>
+
+  <span class="pill">Coming soon to the App Store</span>
+
+  <blockquote>
+    “I inherited a century of chiropractic philosophy. C.A.L. is how I share that wisdom with the world.”
+    <cite>— Dr. Mia Curcuruto, D.C., Founder</cite>
+  </blockquote>
+
+  <nav class="links" aria-label="Site links">
+    <a href="mailto:calcoherence@gmail.com">Contact &amp; Support</a>
+    <a href="https://www.wholelifeministriesinc.com/privacy-policy">Privacy Policy</a>
+  </nav>
+</main>
+<footer>
+  <p>© 2026 C.A.L. Coherence Awareness Living LLC</p>
+  <p>2005 Shattuck Ave, Suite B3, Berkeley, CA 94704</p>
+  <p><a href="mailto:calcoherence@gmail.com" style="color:inherit">calcoherence@gmail.com</a></p>
+  <p class="note">C.A.L. is a wellness and personal coaching app. It does not provide medical diagnosis or treatment.</p>
+</footer>
+</body>
+</html>
